@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+form{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 50%,
+}
+label{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 50%,
+}
+
+.note{
+    visibility: hidden;
+}
+h1{
+    color: white
+}
+p{
+    color: white;
+}
