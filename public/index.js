@@ -47,7 +47,7 @@ buttons.forEach(button => {
           }
           else if(response.status !== 200){
             const header = document.createElement('h3');
-            header.innerHTML = 'Sign Yourself Up / Log Yourself In, so Death Knows You\'re Coming';
+            header.innerHTML = 'Sign Yourself Up If You Haven\'t Already / Log Yourself In, so Death Knows You\'re Coming';
             document.body.prepend(header);
           }
         });
