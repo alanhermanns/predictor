@@ -18,6 +18,9 @@ label{
     flex-direction: column;
     max-width: 50%,
 }
+h3{
+    color: white
+}
 
 .note{
     visibility: hidden;
