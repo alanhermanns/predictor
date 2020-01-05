@@ -1,5 +1,11 @@
 const isGood = async() => await fetch('/api/v1/auth/verify');
-const userStatus = isGood();
+isGood()
+  .then(response => {
+    if(response.status !== 200)
+      window.location.assign('./index.html');
+    console.log(response);
+  });
+
 
 
 const form = document.createElement('form');
