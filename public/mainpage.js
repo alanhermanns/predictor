@@ -1,3 +1,7 @@
+const isGood = async() => await fetch('/api/v1/auth/verify');
+const userStatus = isGood();
+
+
 const form = document.createElement('form');
 form.innerHTML = `<form>
 <label>Full Name</label>
@@ -20,10 +24,10 @@ form.innerHTML = `<form>
 </form>`;
 document.body.appendChild(form);
 const button = document.querySelector('button');
+
 button.addEventListener('click', async(event) => {
   event.preventDefault();
   const formData = new FormData(form);
-  
   const fullName = formData.get('name');
   const birthday = formData.get('birthday');
   const momBDay = formData.get('mom-bday');
