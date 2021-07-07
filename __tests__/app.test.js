@@ -32,7 +32,7 @@ describe('app routes', () => {
       })
       .then(res => {
         expect(res.body).toEqual({
-          date: expect.any(String)
+          date: ['Big Fred', expect.any(String)] 
         });
       });
   });
